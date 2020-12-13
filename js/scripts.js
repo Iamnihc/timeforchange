@@ -18,6 +18,7 @@ var peopleSalaries = {
     "Median American Household": 7.83760750963, 
     "High School Teacher":5.7291892165,
     "Senator": 174000 / 8760,
+    "Federal Minimum Wage, 9 to 5": 21112/8760,
     "Jeff": 13400000,
 
 
