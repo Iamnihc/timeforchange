@@ -1,0 +1,34 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.sect{
+    width:100vw;
+    height:33vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    width:100%;
+    height:100%;
+}
+
+html{
+    width:100%;
+    height:100%;
+}
+
+#holdbutton{
+    height: 20vh;
+    width:20vh;
+    font-size:5vh;
+    border-radius:100%;
+    font-family: cursive, ubuntu, sans-serif;
+    background-color:red;
+        display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
