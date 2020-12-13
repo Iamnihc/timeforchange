@@ -33,3 +33,6 @@ html{
     align-items: center;
 
 }
+select{
+    font-size:4vh;
+}
