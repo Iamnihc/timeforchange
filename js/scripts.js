@@ -1,0 +1,2 @@
+var itemCosts = {}
+var peopleSalaries = {}
