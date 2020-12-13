@@ -1,2 +1,2 @@
-var itemCosts = {}
-var peopleSalaries = {}
+var itemCosts = {};
+var peopleSalaries = {};
