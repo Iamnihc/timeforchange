@@ -1,9 +1,28 @@
 
 // Costs of items, dollars
-var itemCosts = { "pizza": 20, "toyota corolla": 19925, "iPhone 12 Pro": 999, "Airpods Max": 549, "Airpods": 119, "One gallon of gas": 4, "Double Double Burger Combo": 7.84, "Your College Tuition (in state)": 13991, "Your College Tuition (out of state)": 43745, "One month of netfix": 8.99 };
+var itemCosts = {
+    "Round Table large pizza": 19.99,
+    "toyota corolla": 19925,
+    "iPhone 12 Pro": 999,
+    "Airpods Max": 549,
+    "Airpods": 119,
+    "One gallon of gas": 4,
+    "In N Out Double Double Burger Combo": 7.84,
+    "Your College Tuition (in state)": 13991,
+    "Your College Tuition (out of state)": 43745,
+    "One month of netfix": 8.99
+};
 
-// Salary of people, dollars per hour
-var peopleSalaries = { "Chinmai": 12, "Jeff": 13400000 };
+// Salary of people, dollars per hour average
+var peopleSalaries = { 
+    "Median American Household": 7.83760750963, 
+    "High School Teacher":5.7291892165,
+    "Senator": 174000 / 8760,
+    "Jeff": 13400000,
+
+
+ };
+
 // Jeff https://marketrealist.com/p/how-much-does-jeff-bezos-make-a-second/ 
 
 
@@ -26,7 +45,7 @@ function updateScreen(time, salary, item) {
     // shows the time difference somehow
     td = getRealTime(salary, item) - time;
     console.log(getRealTime(salary, item))
-    document.getElementById("out").innerHTML = "You are off by" + (td / 1000) + " seconds. try again if you would like"
+    document.getElementById("out").innerHTML = "You are off by " + (Math.round(td) / 1000) + " seconds. <br> try again if you would like"
 
 }
 
@@ -81,9 +100,9 @@ function absorbEvent_(event) {
     e.returnValue = false;
     return false;
 }
-function absorbTouchStart_(event){
-        holder();
-        var e = event || window.event;
+function absorbTouchStart_(event) {
+    holder();
+    var e = event || window.event;
     e.preventDefault && e.preventDefault();
     e.stopPropagation && e.stopPropagation();
     e.cancelBubble = true;
@@ -91,10 +110,10 @@ function absorbTouchStart_(event){
 
     return false;
 }
-function absorbTouchEnd_(event){
+function absorbTouchEnd_(event) {
     console.log("hmm")
-        letGo();
-        var e = event || window.event;
+    letGo();
+    var e = event || window.event;
     e.preventDefault && e.preventDefault();
     e.stopPropagation && e.stopPropagation();
     e.cancelBubble = true;
