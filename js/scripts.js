@@ -41,7 +41,7 @@ var totalTime;
 var timeUpdater
 function holder() {
   startertime = Date.now();
-  timeUpdater = setInterval(()=> document.getElementById("time").innerHTML = ("held for " +Math.round(Date.now() - startertime)/1000 +"."+((Date.now() - startertime)%1000+"").padEnd(5,"0") + " seconds"),1);
+  timeUpdater = setInterval(()=> document.getElementById("time").innerHTML = ("held for " +Math.round((Date.now() - startertime)/1000) +"."+((Date.now() - startertime)%1000+"").padEnd(3,"0") + " seconds"),1);
 }
 
 function letGo() {
