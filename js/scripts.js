@@ -20,6 +20,7 @@ var peopleSalaries = {
   "Federal Minimum Wage, 9 to 5": 21112 / 8760,
   "California Minimum Wage, 9 to 5": 34944 / 8760,
   "Jeff Bezos": 13400000,
+
 };
 
 // Jeff https://marketrealist.com/p/how-much-does-jeff-bezos-make-a-second/
@@ -133,5 +134,8 @@ function updateValues() {
   document.getElementById("salary").innerHTML = peopleSalaries[getPerson()];
   document.getElementById("itemCost").innerHTML = itemCosts[getItem()];
 }
+
+isLight = window.matchMedia("(prefers-color-scheme: light)").matches
+console.log(isLight)
 
 updateValues();
