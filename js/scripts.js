@@ -50,7 +50,7 @@ function updateScreen(time, salary, item) {
   // shows the time difference somehow
   td = getRealTime(salary, item) - time;
   console.log(getRealTime(salary, item));
-  console.log(getRealTime(salary,item,time));
+  console.log(getRCost(salary,item,time));
   document.getElementById("out").innerHTML =
     "You are off by " +
     Math.round(td) / 1000 +
