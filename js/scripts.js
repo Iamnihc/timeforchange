@@ -52,12 +52,18 @@ function letGo() {
 }
 function updateScreen(time, salary, item) {
   // shows the time difference somehow
-  td = getRealTime(salary, item) - time;
+  coff = getRCost(salary,item,time);
   //console.log(getRealTime(salary, item));
   console.log("the real cost" + getRCost(salary,item,time));
+  if ((Math.abs(coff)-coff)==0){
   document.getElementById("out").innerHTML =
     "You are off by $" +
-    Math.round(getRCost(salary,item,time)*100) / 100 ;
+    Math.round(coff*100) / 100 ;
+  }
+  else{
+    document.getElementById("out").innerHTML =
+    "You are over by $" +
+    Math.round(Math.abs(coff)*100) / 100 ;
 }
 
 function createDropElement(name) {
