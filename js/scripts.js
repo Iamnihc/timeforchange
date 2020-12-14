@@ -66,7 +66,7 @@ function updateScreen(time, salary, item) {
     "You are over by $" +
     Math.round(Math.abs(coff)*100) / 100 ;
 }
-
+}
 function createDropElement(name) {
   var opt = document.createElement("option");
   opt.id = name;
