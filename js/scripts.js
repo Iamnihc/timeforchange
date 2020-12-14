@@ -142,8 +142,8 @@ function init() {
 init();
 
 function updateValues() {
-  document.getElementById("salary").innerHTML = (Math.round(peopleSalaries[getPerson()]*100))/100;
-  document.getElementById("itemCost").innerHTML = itemCosts[getItem()];
+  document.getElementById("salary").innerHTML = "$"+((Math.round(peopleSalaries[getPerson()]*100))/100)+"Per Hour On Average";
+  document.getElementById("itemCost").innerHTML = "$"+itemCosts[getItem()];
 }
 
 isLight = window.matchMedia("(prefers-color-scheme: light)").matches
