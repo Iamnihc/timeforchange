@@ -138,7 +138,7 @@ function init() {
 init();
 
 function updateValues() {
-  document.getElementById("salary").innerHTML = peopleSalaries[getPerson()];
+  document.getElementById("salary").innerHTML = (Math.round(peopleSalaries[getPerson()]*100))/100;
   document.getElementById("itemCost").innerHTML = itemCosts[getItem()];
 }
 
