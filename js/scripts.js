@@ -43,7 +43,7 @@ function holder() {
 }
 function letGo() {
   totalTime = Date.now() - startertime;
-  console.log(totalTime);
+  //console.log(totalTime);
   updateScreen(totalTime, getPerson(), getItem());
 }
 function updateScreen(time, salary, item) {
@@ -69,7 +69,7 @@ function createDropElement(name) {
 function createItemDrop() {
   selectHTML = document.getElementById("itdrop");
   for (person in itemCosts) {
-    // console.log(person);
+    console.log(person);
     selectHTML.appendChild(createDropElement(person));
   }
 }
@@ -78,7 +78,7 @@ function createItemDrop() {
 function createPeopleDrop() {
   selectHTML = document.getElementById("indrop");
   for (person in peopleSalaries) {
-    // console.log(person);
+    console.log(person);
     selectHTML.appendChild(createDropElement(person));
   }
 }
@@ -144,7 +144,7 @@ function updateValues() {
 }
 
 isLight = window.matchMedia("(prefers-color-scheme: light)").matches
-// console.log(isLight)
+console.log(isLight)
 
 if (isLight){
     toAdd = document.createElement("link")
