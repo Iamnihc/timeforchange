@@ -52,9 +52,8 @@ function updateScreen(time, salary, item) {
   //console.log(getRealTime(salary, item));
   console.log("the real cost" + getRCost(salary,item,time));
   document.getElementById("out").innerHTML =
-    "You are off by " +
-    Math.round(td) / 1000 +
-    " Dollars";
+    "You are off by $" +
+    Math.round(getRCost(salary,item,time)*100) / 100 ;
 }
 
 function createDropElement(name) {
