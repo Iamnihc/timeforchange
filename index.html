@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
 
     <title>Time For Change</title>
@@ -10,27 +9,22 @@
     <meta name="author" content="Chinmai Srinivas and Matthew Polis" />
 
     <link rel="stylesheet" href="css/style.css?v=1.0" />
-</head>
+  </head>
 
-<body onclick="updateValues();">
-    <div id=incomesection class=sect>
-        <select name = indrop id = indrop>
-
-        </select>
-        <p id=salary >
-
-        </p>
+  <body onclick="updateValues();">
+    <div id="incomesection" class="sect">
+        <p> Yearly income averaged to hours (nobody works 24/7)</p>
+      <select name="indrop" id="indrop"></select>
+      <p id="salary"></p>
     </div>
-    <div id=btnsection class=sect>
-        <p id=holdbutton onmousedown="holder();" onmouseup = "letGo();">Earn</p>
-        <p id=out></p> 
+    <div id="btnsection" class="sect">
+      <p id="holdbutton" onmousedown="holder();" onmouseup="letGo();">Earn</p>
+      <p id="out"></p>
     </div>
-    <div id=itemsection class=sect>
-        <select name="i" id="itdrop">
-        </select>
-        <p id = itemCost> </p>
+    <div id="itemsection" class="sect">
+      <select name="i" id="itdrop"></select>
+      <p id="itemCost"></p>
     </div>
     <script src="js/scripts.js"></script>
-</body>
-
+  </body>
 </html>
