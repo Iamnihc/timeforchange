@@ -142,7 +142,7 @@ function init() {
 init();
 
 function updateValues() {
-  document.getElementById("salary").innerHTML = "$"+((Math.round(peopleSalaries[getPerson()]*100))/100)+"Per Hour On Average";
+  document.getElementById("salary").innerHTML = "$"+((Math.round(peopleSalaries[getPerson()]*100))/100)+" Per Hour On Average";
   document.getElementById("itemCost").innerHTML = "$"+itemCosts[getItem()];
 }
 
