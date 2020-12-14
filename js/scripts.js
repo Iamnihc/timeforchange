@@ -34,7 +34,7 @@ function getRealTime(income, item) {
 }
 function getRCost(income,item,time) {
   // returns time in milliseconds (i think)
-  return itemCosts[item] - (peopleSalaries[income]*time* 60 * 60 * 1000);
+  return itemCosts[item] - (peopleSalaries[income]*(time/ 60 / 60 / 1000));
 }
 var startertime;
 var totalTime;
@@ -50,7 +50,7 @@ function updateScreen(time, salary, item) {
   // shows the time difference somehow
   td = getRealTime(salary, item) - time;
   //console.log(getRealTime(salary, item));
-  console.log(getRCost(salary,item,time));
+  console.log("the real cost" + getRCost(salary,item,time));
   document.getElementById("out").innerHTML =
     "You are off by " +
     Math.round(td) / 1000 +
