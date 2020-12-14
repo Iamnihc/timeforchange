@@ -54,7 +54,7 @@ function updateScreen(time, salary, item) {
   document.getElementById("out").innerHTML =
     "You are off by " +
     Math.round(td) / 1000 +
-    " seconds. <br> try again if you would like";
+    " Dollars";
 }
 
 function createDropElement(name) {
