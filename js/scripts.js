@@ -10,6 +10,8 @@ var itemCosts = {
   "Your College Tuition (in state)": 13991,
   "Your College Tuition (out of state)": 43745,
   "One month of netfix": 8.99,
+  "Median Home Price":200000,
+  "Yacht":275000000,
 };
 
 // Salary of people, dollars per hour average
@@ -17,6 +19,7 @@ var peopleSalaries = {
   "Median American Household": 7.83760750963,
   "High School Teacher": 5.7291892165,
   "Senator": 174000 / 8760,
+  "Average Salary of US Government Employees":2567/438,
   "Federal Minimum Wage, 9 to 5": 21112 / 8760,
   "California Minimum Wage, 9 to 5": 34944 / 8760,
   "Jeff Bezos": 13400000,
