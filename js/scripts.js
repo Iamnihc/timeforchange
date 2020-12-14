@@ -138,4 +138,18 @@ function updateValues() {
 isLight = window.matchMedia("(prefers-color-scheme: light)").matches
 console.log(isLight)
 
+if (isLight){
+    toAdd = document.createElement("link")
+    toAdd.rel = "stylesheet";
+    toAdd.href = "css/theme-dark.css"
+    document.getElementById("lmao").appendChild(toAdd)
+    
+}
+else{
+    toAdd = document.createElement("link")
+    toAdd.rel = "stylesheet";
+    toAdd.href = "css/theme-dark.css"
+    document.getElementById("lmao").appendChild(toAdd)
+}
+
 updateValues();
