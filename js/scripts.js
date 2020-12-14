@@ -138,5 +138,5 @@ init()
 
 function updateValues(){
     document.getElementById("salary").innerHTML = peopleSalaries[getPerson()]
-        document.getElementById("salary").innerHTML = peopleSalaries[getPerson()]
+        document.getElementById("itemCost").innerHTML = itemCosts[getItem()]
 }
