@@ -38,11 +38,15 @@ function getRCost(income,item,time) {
 }
 var startertime;
 var totalTime;
+var timeUpdater
 function holder() {
   startertime = Date.now();
+  timeUpdater = setInterval(()=> document.getElementById("time").innerHTML = ("held for " + ((Date.now() - startertime)/1000+"").padEnd(3,"0") + " seconds"),1);
 }
+
 function letGo() {
   totalTime = Date.now() - startertime;
+  clearInterval(timeUpdater);
   //console.log(totalTime);
   updateScreen(totalTime, getPerson(), getItem());
 }
