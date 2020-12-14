@@ -20,7 +20,7 @@ var peopleSalaries = {
     "Senator": 174000 / 8760,
     "Federal Minimum Wage, 9 to 5": 21112/8760,
     "California Minimum Wage, 9 to 5":  34944/ 8760,
-    "Jeff": 13400000,
+    "Jeff Bezos": 13400000,
 
 
  };
