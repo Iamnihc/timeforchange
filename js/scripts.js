@@ -135,3 +135,8 @@ function init() {
     preventLongPressMenu(document.getElementById('holdbutton'));
 }
 init()
+
+function updateValues(){
+    document.getElementById("salary").innerHTML = peopleSalaries[getPerson()]
+        document.getElementById("salary").innerHTML = peopleSalaries[getPerson()]
+}

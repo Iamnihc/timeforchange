@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="css/style.css?v=1.0" />
 </head>
 
-<body>
+<body onclick="updateValues();">
     <div id=incomesection class=sect>
         <select name = indrop id = indrop>
 
         </select>
+        <p id=salary >
+
+        </p>
     </div>
     <div id=btnsection class=sect>
         <p id=holdbutton onmousedown="holder();" onmouseup = "letGo();">Earn</p>
@@ -24,8 +27,8 @@
     </div>
     <div id=itemsection class=sect>
         <select name="i" id="itdrop">
-
         </select>
+        <p id = itemCost> </p>
     </div>
     <script src="js/scripts.js"></script>
 </body>
