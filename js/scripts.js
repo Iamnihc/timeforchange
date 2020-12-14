@@ -144,7 +144,7 @@ console.log(isLight)
 if (isLight){
     toAdd = document.createElement("link")
     toAdd.rel = "stylesheet";
-    toAdd.href = "css/theme-dark.css"
+    toAdd.href = "css/theme-light.css"
     document.getElementById("lmao").appendChild(toAdd)
     
 }
