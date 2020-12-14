@@ -3,6 +3,9 @@ body{
     color:#111;
 }
 #holdbutton {
-        background-color: #3700b3;
-        color:#BB86FC;
+        background-color:  #6200ee;
+        color:#EEE;
+        border-width: 5px;
+        border-style:solid;
+        border-color:#BB86FC;
 }

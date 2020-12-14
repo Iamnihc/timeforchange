@@ -4,5 +4,9 @@ body{
 }
 #holdbutton {
         background-color: #BB86FC;
-        color:#3700b3;
+        background-color:  #6200ee;
+        color:#111;
+        border-width: 5px;
+        border-style:solid;
+        border-color:#3700b3;
 }
