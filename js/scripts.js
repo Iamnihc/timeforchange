@@ -22,6 +22,7 @@ var peopleSalaries = {
   "Average Salary of US Government Employees":2567/438,
   "Federal Minimum Wage, 9 to 5": 21112 / 8760,
   "California Minimum Wage, 9 to 5": 34944 / 8760,
+  "Six figure salary": 1000000 / 8760,
   "Jeff Bezos": 13400000,
 
 };
