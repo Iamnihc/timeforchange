@@ -4,7 +4,7 @@ var itemCosts = {
   "toyota corolla": 19925,
   "iPhone 12 Pro": 999,
   "Airpods Max": 549,
-  Airpods: 119,
+  "Airpods": 119,
   "One gallon of gas": 4,
   "In N Out Double Double Burger Combo": 7.84,
   "Your College Tuition (in state)": 13991,
@@ -16,7 +16,7 @@ var itemCosts = {
 var peopleSalaries = {
   "Median American Household": 7.83760750963,
   "High School Teacher": 5.7291892165,
-  Senator: 174000 / 8760,
+  "Senator": 174000 / 8760,
   "Federal Minimum Wage, 9 to 5": 21112 / 8760,
   "California Minimum Wage, 9 to 5": 34944 / 8760,
   "Jeff Bezos": 13400000,
