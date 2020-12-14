@@ -34,7 +34,7 @@ function getRealTime(income, item) {
 }
 function getRCost(income,item,time) {
   // returns time in milliseconds (i think)
-  return itemCosts[item] - (peopleSalaries[income]*time);
+  return itemCosts[item] - (peopleSalaries[income]*time* 60 * 60 * 1000);
 }
 var startertime;
 var totalTime;
