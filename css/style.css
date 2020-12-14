@@ -28,7 +28,7 @@ html {
   width: 20vh;
   font-size: 5vh;
   border-radius: 100%;
-  font-family: "ubuntu", cursive;
+  font-family: "Comic Sans Ms", "Fira Sans", sans-serif;
 
   display: flex;
   justify-content: center;
