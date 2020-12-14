@@ -32,6 +32,10 @@ function getRealTime(income, item) {
   // returns time in milliseconds (i think)
   return (itemCosts[item] / peopleSalaries[income]) * 60 * 60 * 1000;
 }
+function getRCost(income,item,time) {
+  // returns time in milliseconds (i think)
+  return itemCosts[item] - (peopleSalaries[income]*time);
+}
 var startertime;
 var totalTime;
 function holder() {
@@ -46,6 +50,7 @@ function updateScreen(time, salary, item) {
   // shows the time difference somehow
   td = getRealTime(salary, item) - time;
   console.log(getRealTime(salary, item));
+  console.log(getRealTime(salary,item,time));
   document.getElementById("out").innerHTML =
     "You are off by " +
     Math.round(td) / 1000 +
@@ -144,7 +149,7 @@ console.log(isLight)
 if (isLight){
     toAdd = document.createElement("link")
     toAdd.rel = "stylesheet";
-    toAdd.href = "css/theme-light.css"
+    toAdd.href = "css/theme-dark.css"
     document.getElementById("lmao").appendChild(toAdd)
     
 }
